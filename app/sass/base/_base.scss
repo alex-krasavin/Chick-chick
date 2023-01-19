@@ -16,10 +16,12 @@ body {
 	display: flex; /* sticky footer */
 	flex-direction: column; /* sticky footer */
 
-	font-family: 'DM Sans', sans-serif;
-    color: $black-color;
+	font-family: 'Raleway', sans-serif;
+    color: $text-color;
     font-size: 16px;
     line-height: 1.6875;
+
+    background-color: #241D1C;
 
     text-rendering: optimizeSpeed;
     //text-rendering: optimizeLegibility;
@@ -40,7 +42,7 @@ body > * {
 /* Grid styles */
 
 .container {
-	max-width: 1320px;
+	max-width: 1246px;
     // width: 100%;
 	margin-left: auto;
     margin-right: auto;
@@ -56,18 +58,18 @@ body > * {
     }
 
     /* Tablet */
-    @media (max-width: 900px) {
-        width: 700px;
+    @media (max-width: 1024px) {
+        max-width: 958px;
     }
 
     /* Mobile */
-    @media (max-width: 700px) {
-        width: 320px;
+    @media (max-width: 768px) {
+        max-width: 702px;
     }
 
     /* Mobile XS */
-    @media (max-width: 599px) {
-        width: 320px;
+    @media (max-width: 320px) {
+        width: 302px;
     }
 }
 

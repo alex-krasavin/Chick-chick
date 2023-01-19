@@ -1,0 +1,30 @@
+.btn {
+    padding: 13px 47px;
+    background: #F6F3E3;
+    border-radius: 4px;
+
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #241D1C;
+
+    &:hover {
+        background-color: #EFE7BE
+    }
+
+    // &:focus {
+    //     border: 1px solid rgb(0, 0, 0);
+    //     border-style: double;
+    //     border-radius: 6px;
+    // }
+
+    &:disabled {
+        opacity: 0.4;
+    }
+
+    @media (max-width:560px) {
+        font-size: 12px;
+        padding: 10px 25px;
+    }
+
+}

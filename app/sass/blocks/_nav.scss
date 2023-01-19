@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// .logo {
+
+// }
+
+// .logo__img {
+
+// }
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    column-gap: 33px;
+}
+
+// .nav__item {
+
+// }
+
+.nav__link {
+  font-size: 16px;
+  text-transform: uppercase;
+}

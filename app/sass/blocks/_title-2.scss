@@ -1,0 +1,14 @@
+.title-2 {
+    max-width: 904px;
+    font-size: 40px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @media (max-width:768px) {
+        font-size: 32px;
+    }
+
+    @media (max-width:560px) {
+        font-size: 20px;
+    }
+}

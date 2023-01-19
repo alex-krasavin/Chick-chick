@@ -1,8 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 // Base
 @import "./base/vars";
 @import "./base/reset";
 @import "./base/base";
 
+// Blocks
+@import "./blocks/nav";
+@import "./blocks/btn";
+@import "./blocks/title-main";
+@import "./blocks/slider";
+@import "./blocks/title-2";
+@import "./blocks/title-3";
+
 // section
 @import "./section/header";
+@import "./section/hero";
+@import "./section/price";
+@import "./section/about";
+@import "./section/reserve";
+@import "./section/footer";

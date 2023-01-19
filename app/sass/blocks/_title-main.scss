@@ -1,10 +1,18 @@
 .title-main {
-font-family: 'SF Pro';
-font-weight: 860;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
-text-transform: uppercase;
+    margin-bottom: 36px;
+    max-width: 904px;
+    font-size: 54px;
+    line-height: 1.2;
+    text-transform: uppercase;
 
-color: #FFFFFF;
+    @media (max-width:768px) {
+        margin-bottom: 24px;
+        font-size: 40px;
+    }
+
+    @media (max-width:560px) {
+        max-width: 420px;
+        margin-bottom: 16px;
+        font-size: 24px;
+    }
 }
