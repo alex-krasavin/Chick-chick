@@ -103,6 +103,12 @@
             color: #241D1C
         }
     }
+
+    &:disabled {
+        +.radio__label {
+            opacity: 0.3;
+        }
+    }
 }
 
 .radio__label {
@@ -129,17 +135,31 @@
 
 .radio__label--spec {
     padding-left: 52px;
-    background-size: 36px;
-    background-position: 8px;
-    background-repeat: no-repeat;
-
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 8px;
+        background-image: var(--bg-img);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+    }
     @media (max-width:768px) {
         padding-left: 40px;
-        background-size: 24px;
+        &::before {
+            width: 24px;
+            height: 24px;
+        }
     }
 }
 
 .reserve__fieldset--sub {
+    font-feature-settings: 'pnum' on, 'lnum' on;
     flex-basis: 100%;
     &:not(:last-child) {
        margin-bottom: 24px; 
@@ -147,7 +167,7 @@
        @media (max-width:768px) {
             margin-bottom: 20px;
        }
-    }  
+    } 
 }
 
 

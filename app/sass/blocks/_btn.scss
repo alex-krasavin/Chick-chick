@@ -8,15 +8,13 @@
     text-transform: uppercase;
     color: #241D1C;
 
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: #EFE7BE
     }
 
-    // &:focus {
-    //     border: 1px solid rgb(0, 0, 0);
-    //     border-style: double;
-    //     border-radius: 6px;
-    // }
+    &:focus-visible {
+        outline: 1px solid #fff;
+    }
 
     &:disabled {
         opacity: 0.4;

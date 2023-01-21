@@ -36,12 +36,12 @@
     <header class="header">
         <div class="container">
             <nav class="header__nav nav">
-                <div class="logo"><a href="#" class="logo__link"><img src="./img/header/logo.svg" alt="logo" class="logo__img"></div></a>
+                <div class="logo"><a href="#" class="logo__link"><img src="./img/header/logo.svg" alt="logo" class="logo__img"></a></div>
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#" class="nav__link">стоимость услуг</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
                 </ul>
-                <a href="#" class="btn">Записаться</a>
+                <a href="#reserve" class="btn">Записаться</a>
             </nav>
         </div>
     </header>
@@ -112,7 +112,7 @@
                             <li class="price__item"><span class="price__item-text">Оформление бровей</span>  <span class="price__value">1000 руб</span></li>
                         </ul>
 
-                        <a href="#" class="btn">Записаться</a>
+                        <a href="#reserve" class="btn">Записаться</a>
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@
         <!-- //about -->
 
         <!-- Reserve -->
-        <section class="reserve">
+        <section class="reserve" id="reserve">
             <div class="container">
                 <div class="reserve__title">
                     <h2 class="title-2">Как записаться к нам</h2>
@@ -169,7 +169,7 @@
                 <form class="reserve__form">
                     <div class="reserve__form-container">
                         <!-- services -->
-                        <fieldset class="reserve__fieldset">
+                        <fieldset class="reserve__fieldset reserve__fieldset--service" name="fieldService">
                             <legend class="reserve__legend">Услуга</legend>
 
                             <label class="radio">
@@ -210,41 +210,41 @@
                         <!-- //services -->
 
                         <!-- Spec -->
-                        <fieldset class="reserve__fieldset">
+                        <fieldset class="reserve__fieldset" name="fieldspec">
                             <legend class="reserve__legend">Специалист</legend>
 
                             <label class="radio">
                                 <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label--spec" style="background-image: url(./img/reserve/spec-1.png);">Игорь</span>
+                                <span class="radio__label radio__label--spec" style="--bg-img: url(../img/reserve/spec-1.png);">Игорь</span>
                             </label>
                            
                             <label class="radio">
                                 <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label--spec" style="background-image: url(./img/reserve/spec-2.png);">Анатолий</span>
+                                <span class="radio__label radio__label--spec" style="--bg-img: url(../img/reserve/spec-2.png);">Анатолий</span>
                             </label>
 
                             <label class="radio">
                                 <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label--spec" style="background-image: url(./img/reserve/spec-3.png);">Руслан</span>
+                                <span class="radio__label radio__label--spec" style="--bg-img: url(../img/reserve/spec-3.png);">Руслан</span>
                             </label>
 
                             <label class="radio">
                                 <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label--spec" style="background-image: url(./img/reserve/spec-4.png);">Михаил</span>
+                                <span class="radio__label radio__label--spec" style="--bg-img: url(../img/reserve/spec-4.png);">Михаил</span>
                             </label>
 
                             <label class="radio">
                                 <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label--spec" style="background-image: url(./img/reserve/spec-5.png);">Евгений</span>
+                                <span class="radio__label radio__label--spec" style="--bg-img: url(../img/reserve/spec-5.png);">Евгений</span>
                             </label>
                         </fieldset>
                         <!-- //Spec -->
 
                         <!-- Data -->
-                        <fieldset class="reserve__fieldset">
+                        <fieldset class="reserve__fieldset" name="fielddata">
                             <legend class="reserve__legend">Дата и время</legend>
                             <!-- month -->
-                            <fieldset class="reserve__fieldset reserve__fieldset--sub">
+                            <fieldset class="reserve__fieldset reserve__fieldset--sub" name="fieldmonth">
                                 <label class="radio">
                                     <input class="radio__input" type="radio" name="month">
                                     <span class="radio__label">Январь</span>
@@ -261,7 +261,7 @@
                             <!-- //month -->
 
                             <!-- date -->
-                            <fieldset class="reserve__fieldset reserve__fieldset--sub">
+                            <fieldset class="reserve__fieldset reserve__fieldset--sub" name="fielddate">
                                 <label class="radio">
                                     <input class="radio__input" type="radio" name="date">
                                     <span class="radio__label">18 января</span>
@@ -282,7 +282,7 @@
                             <!-- //date -->
 
                             <!-- time -->
-                            <fieldset class="reserve__fieldset reserve__fieldset--sub">
+                            <fieldset class="reserve__fieldset reserve__fieldset--sub" name="fieldtime">
                                 <label class="radio">
                                     <input class="radio__input" type="radio" name="time">
                                     <span class="radio__label">10:00-11:30</span>
@@ -316,7 +316,7 @@
                         </fieldset>
                         <!-- //Data -->
                     </div>
-                    <button class="reserve__btn btn" disabled>Записаться</button>
+                    <button class="reserve__btn btn" disabled id="btn">Записаться</button>
                 </form>
                 <!-- //Form -->
             </div>
@@ -327,7 +327,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__nav nav">
-                <div class="logo"><a href="#" class="logo__link"><img src="./img/header/logo.svg" alt="logo" class="logo__img"></div></a>
+                <div class="logo"><a href="#" class="logo__link"><img src="./img/header/logo.svg" alt="logo" class="logo__img"></a></div>
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#" class="nav__link">стоимость услуг</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
